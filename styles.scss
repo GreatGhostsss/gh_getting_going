@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 2.5vh;
+    display: grid;
+    grid-template-columns: 5% 20% 70% 5%;
+    grid-template-rows: 20px 0.5fr 20px 20px 20px 5fr 60px;
+    margin: 5px 10px;
+}
+
+#upperFrame {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    background-color: black;
+}
+
+#nutgraph {
+    align-self: end;
+    grid-column: 2 / 3;
+    grid-row: 2;
+    font-size: 2.5vh;
+    padding-bottom: 10px;
+}
+
+#title {
+    align-self: center;
+    grid-column: 3 / 4;
+    grid-row: 2;
+    font-size: 8vh;
+    justify-self: end;
+}
+
+#lowerFrame {
+    grid-column: 1 / 5;
+    grid-row: 3;
+    background-color: black;
+}
+
+//Actual body of the article//
+
+article {
+    grid-column: 2 / 3;
+    grid-row: 4;
+}
+
+#author {
+    color: mediumspringgreen;
+    overflow: visible;
+    position: sticky;
+    grid-column: 2 / 3;
+    grid-row: 4;
+    top: 0;
+    padding-top: 10px;
+}
+
+#getInTouch {
+    font-size: 1.5vh;
+    color: pink;
+    grid-column: 2;
+    grid-row: 5;
+    padding-top: 10px;
+    justify-content: space-around;
+
+    i {
+        padding-right: 15px;
+    }
+}
+
+#content {
+    grid-row: 4 / 7;
+    grid-column: 3 / 4;
+    font-size: 2.5vh;
+}
+
+#footer {
+    grid-row: 8 / 9;
+    grid-column: 1 / 5;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 5% 20% 70% 5%;
+}
+
+ #footerInfo {
+    font-size: 2vh;
+    grid-column: 3 / 4;
+    margin-top: 10px;
+    // justify-self: center;
+    padding: 10px;
+}
+
+img {
+    width: 1000px;
+    height: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+
+::selection {
+    background: cornsilk;
+}
+
+.language-git {
+    color: pink !important;
+}

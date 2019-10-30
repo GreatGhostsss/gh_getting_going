@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Getting Medium'd with GitHub</title>
+    <script src="https://kit.fontawesome.com/f63ad9e480.js" crossorigin="anonymous"></script>
+    <link href="prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="upperFrame"></div>
+    <div id="title">Getting Going with GitHub </div>
+    <div id="nutgraph">An article for GitHub users who want to translate their knowledge of working with the GUI
+        version of GitHub to the command line.</div>
+    <div id="lowerFrame"></div>
+
+    <div id="author">
+        <div>Erin Dawson</div>
+        <div id="getInTouch">
+            <a href="http://twitter.com/jesuppose" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/GreatGhostsss" target="blank"><i class="fab fa-github-alt"></i></a>
+            <i class="fas fa-window-maximize"></i>
+        </div>
+    </div>
+
+    <div id="content">
+        <p>Let’s say you’re green, but not that green. Let’s say you want to learn more about GitHub, but can only
+            find tutorials for either brand new users or advanced workflows for GitHub vets—nothing in between.</p>
+
+        <p>That's where this page comes in.</p>
+
+        <hr>
+
+        <p>Stay with me for a minute.</p>
+
+        <p>I think about naming conventions more than most people. This is a getting started guide, though that naming convention is imperfect. In this case, I’m assuming you know some things about GitHub, so you’re not really starting much of anything; you’re progressing with what you have. On the other hand, these aren’t advanced concepts. So what’s between getting started and incredibly technical matters? We're not gettting start. We're getting going. </p>
+
+        <p>Yes, we're getting going.</p>
+
+        <hr>
+
+        <h3>Assumptions</h3>
+
+        <ul>
+            <li>You're familiar with the GUI version of GitHub, GitHub Desktop</li>
+            <li>You want to be more comfortable with the command line</li>
+            <li>You’re somewhat familiar with concepts that sound weirdly like throwing a frisbee with your dog:
+                push, pull, fetch</li>
+        </ul>
+        <h3>Scenario One: Place the files hosted in your GitHub repository onto your local machine </h3>
+
+        <p>We want to take an already-existing repository and place it on your local machine. The good news is that
+            you'll only have to do this once. </p>
+
+        <ol>
+            <li>In your browser, open the repository you wan to download.</li>
+            <li>Click Clone or download.</li>
+            <li>Open Terminal and paste the following, replacing my dummy URL your project URL:</li>
+            <img src="copyURL.png" alt="">
+        </ol>
+
+        <pre><code class="language-git">$ git clone http://yourproject.com/coolRepo.git</code></pre>
+
+        <p>This command deposits a clone of repository in the /Users/ directory on your Mac</p>
+
+        <h3>Scenario Two: Update local repository to match what's on the server</h3>
+
+        <p>This scenario is relevant if you’ve made a change to one of your files in GitHub itself and want to
+            ensure you’re working locally with the most recent copy. This is rare, but good to know how to do. </p>
+
+        <ol>
+            <li>In your browser, visit the Github repository to which you want to push. </li>
+            <li>Click Clone or download.</li>
+            <li>Copy the URL.</li>
+            <li>In Terminal, pull from the repository using this command, replacing my sample URL with the URL
+                copied in step three.</li>
+        </ol>
+
+
+        <pre><code class="language-git"></code>$ git pull http://yourproject.com/coolRepo.git</code></pre>
+
+        Pull/Fetch/the difference between the two
+
+        You have to CD to the folder you’re fetching/pulling from
+
+        <h3>Scenario Three: Push changes to repository </h3>
+
+        <p>You’ve made changes in your local environment and want to ensure your GH repo reflects them. This is the
+            most common scenario.</p>
+
+        <p>For context about why we're doing what we're doing, we need to understand what the staging area is.</p>
+
+        <p>The staging area is a magical, liminal space where changes you've commited hang in the air, waiting for
+            you to gently glide, er, push them into your repository.</p>
+
+        <p>After making changes to a file locally, we want to place that file in the staging area. We can do this
+            with $git add [file], but this alernative is more comprehensive and easier to use:</p>
+
+        <pre><code class="language-git"></code>git commit -a -m "message here"</code></pre>
+
+        <p>We can ensure the changes we've placed in the staging areas are recognized by Git using
+            <pre><code class="language-git"></code>$ git status</code></pre>
+            <p>If the file name is green, Git has recognized the change and is ready for you to push to the remote
+                repository.</p>
+
+            <p>To push to the repository, we only need:</p>
+            <pre><code class="language-git">$ git push</code></pre>
+
+            <p>For the last, and arguable most important step, the syntax for this command is straightforward.</p>
+
+
+
+    </div>
+    <div id="footer">
+        <div id="footerInfo">Click here to go pack to the portfolio!</div>
+    </div>
+    <script src="prism.js"></script>
+</body>
+
+</html>
+
+<!-- [META]
+    
+Choices re: an imperative style vs. "we": I prefer the latter when writing content whose nature can be intimidating. The plural voice mimicks a hand-holding style of process oriented writing that I personally find helpful. 
+
+[META]
+
+I deliberately used the inanimiate whose in the above paragraph. 
+
+I have not used "simply."  -->
