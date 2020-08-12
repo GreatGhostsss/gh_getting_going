@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Getting Medium'd with GitHub</title>
+    <title>Getting Going with GitHub</title>
     <script src="https://kit.fontawesome.com/f63ad9e480.js" crossorigin="anonymous"></script>
     <link href="prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
@@ -60,6 +60,8 @@
 
         <p>Yes, we're getting going.</p>
 
+        <p>Here, you're going to learn . . . </p>
+
         <hr>
 
         <h3>Assumptions</h3>
@@ -67,6 +69,8 @@
         <ul>
             <li>You're familiar with the GUI version of GitHub: GitHub Desktop</li>
             <li>You want to be more comfortable with the command line</li>
+            <li>You're on OSX.</li>
+            <li>You have a repo with which you can experiment.</li>
             <li>You’re somewhat familiar with concepts that sound weirdly like throwing a frisbee with your dog:
                 push, pull, fetch</li>
         </ul>
@@ -92,7 +96,7 @@
             ensure you’re working locally with the most recent copy. This is rare, but good to know how to do. </p>
 
         <ol>
-            <li>In your browser, visit the Github repository to which you want to push. </li>
+            <li>In your browser, visit the Github repository.</li>
             <li>Click <strong><b>Clone or download</b></strong>.</li>
             <li>Copy the URL.</li>
             <li>In Terminal, pull from the repository using this command, replacing my sample URL with the URL
@@ -103,7 +107,7 @@
 
         <h3>Scenario Three: Push changes to repository </h3>
 
-        <p>You’ve made changes in your local environment and want to ensure your GH repo reflects them. This is the
+        <p>You’ve made changes in your local environment and want to ensure your GitHub repo reflects them. This is the
             most common scenario.</p>
 
         <p>For context about why we're doing what we're doing, we need to understand what the staging area is.</p>
@@ -112,7 +116,7 @@
             you to gently glide, er, push them into your repository.</p>
 
         <p>After making changes to a file locally, we want to place that file in the staging area. We can do this
-            with $git add [file], but this alternative is more comprehensive and easier to use:</p>
+            with $git add [file], but this alternative is more comprehensive:</p>
 
         <pre><code class="language-git"></code>git commit -a -m "message here"</code></pre>
 
@@ -121,11 +125,18 @@
             <p>If the file name is green, GitHub has recognized the change and is ready for you to push to the remote
                 repository.</p>
 
-            <p>To push to the repository, we only need:</p>
+            <ol>
+                <li>To push to the repository, we only need:</li>
+            </ol>
             <pre><code class="language-git">$ git push</code></pre>
+            <hr>
+            <p>GitHub can be a trip. </p>
+            <p></p>Thinking about merges and branches and how they impact your repository through
+            time can be as opaque as a later season of LOST. But these basic workflows will you going.</p>
+        <p></p>To learn more,
+        check out GitHub's <a href="https://docs.github.com/en">documentation</a>.</p>
 
-
-            <!--
+        <!--
     </div>
     <div id="footer">
         <div id="footerInfo">Click here to go pack to the portfolio!</div>
@@ -133,7 +144,7 @@
 -->
 
 
-            <script src="prism.js"></script>
+        <script src="prism.js"></script>
 </body>
 
 </html>
